@@ -1,0 +1,24 @@
+control_id,control_name,resource,status,detail
+CC6.1,MFA enforced for IAM users,aws-example,FAIL,No MFA device registered
+CC6.1,MFA enforced for IAM users,awsprojects,FAIL,No MFA device registered
+CC6.1,MFA enforced for IAM users,awsprojects_github,FAIL,No MFA device registered
+CC6.1,MFA enforced for IAM users,security-scanner,FAIL,No MFA device registered
+CC6.1,MFA enforced for IAM users,userNoMFA,FAIL,No MFA device registered
+CC6.1,MFA enforced for IAM users,userNotRecent,FAIL,No MFA device registered
+CC6.1,MFA enforced for IAM users,userRecent,FAIL,No MFA device registered
+CC6.1,MFA enforced for IAM users,userWithMFA,PASS,MFA device attached
+CC6.2,Inactive credentials removed within policy window,<root_account>,PASS,Last used 9 days ago
+CC6.2,Inactive credentials removed within policy window,userRecent,PASS,Last used 9 days ago
+CC6.6,S3 buckets encrypted at rest,cdk-hnb659fds-assets-905315126713-us-east-1,PASS,Default encryption configured
+CC6.6,S3 buckets encrypted at rest,cf-templates-1tgqeupditf2i-us-east-1,PASS,Default encryption configured
+CC6.6,S3 buckets encrypted at rest,elasticbeanstalk-us-east-2-905315126713,PASS,Default encryption configured
+CC6.6,S3 buckets encrypted at rest,encrypt-client-bucket-bs,PASS,Default encryption configured
+CC6.6,S3 buckets encrypted at rest,encryption-bucket-bs,PASS,Default encryption configured
+CC6.6,S3 buckets encrypted at rest,mycoolbucket-bs,PASS,Default encryption configured
+CC6.6,S3 buckets encrypted at rest,s3-bucket-temp-unecrypted,PASS,Default encryption configured
+CC6.7,No unrestricted inbound access on sensitive ports,sg-0a1855e902de5ea83,FAIL,Open to 0.0.0.0/0 on: SSH
+CC6.7,No unrestricted inbound access on sensitive ports,sg-010946ee73becf08e,FAIL,Open to 0.0.0.0/0 on: SSH
+CC6.7,No unrestricted inbound access on sensitive ports,sg-06c029ca606a6120f,FAIL,Open to 0.0.0.0/0 on: SSH
+CC6.7,No unrestricted inbound access on sensitive ports,sg-0b179a897dfc9312d,PASS,No risky ports open to the world
+CC6.7,No unrestricted inbound access on sensitive ports,sg-081afa01d40278ece,PASS,No risky ports open to the world
+CC6.7,No unrestricted inbound access on sensitive ports,sg-0fd5d11cb645f904f,PASS,No risky ports open to the world
